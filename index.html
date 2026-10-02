@@ -1,0 +1,551 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Wajeeha Aslam — AI Engineer</title>
+    <meta
+      name="description"
+      content="AI Engineer building production RAG systems, knowledge graphs, and LLM applications."
+    />
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Space+Grotesk:wght@400;500;600;700&family=Syne:wght@600;700;800&display=swap"
+      rel="stylesheet"
+    />
+    <link rel="stylesheet" href="css/styles.css" />
+  </head>
+  <body>
+    <div class="cursor" aria-hidden="true"></div>
+    <div class="cursor-dot" aria-hidden="true"></div>
+    <div class="work-preview" id="work-preview" aria-hidden="true">
+      <span class="work-preview-index"></span>
+      <span class="work-preview-title"></span>
+      <span class="work-preview-stat"></span>
+    </div>
+
+    <!-- Heat Bureau: sticky year stamp -->
+    <aside class="year-stamp" aria-hidden="true">
+      <span>c</span>
+      <span>2025—</span>
+      <span>2026</span>
+    </aside>
+
+    <!-- ThevertMenthe: interactive ink canvas -->
+    <canvas class="ink-canvas" id="ink-canvas" aria-hidden="true"></canvas>
+
+    <div class="loader" id="loader">
+      <p class="loader-brand">wa</p>
+      <p class="loader-count"><span id="loader-num">0</span></p>
+    </div>
+
+    <header class="topbar">
+      <div class="topbar-left">
+        <span class="status"><i></i> Open for work</span>
+        <span class="sep" aria-hidden="true">·</span>
+        <span class="clock" id="clock">Lahore — --:--</span>
+      </div>
+      <div class="topbar-right">
+        <a href="mailto:wajeehaaslam597@gmail.com" class="magnet">Email</a>
+        <a
+          class="magnet"
+          href="https://linkedin.com/in/wajeeha-aslam"
+          target="_blank"
+          rel="noopener noreferrer"
+          >LinkedIn</a
+        >
+        <a
+          class="magnet"
+          href="https://github.com/WajeehaAslam"
+          target="_blank"
+          rel="noopener noreferrer"
+          >GitHub</a
+        >
+        <a href="mailto:wajeehaaslam597@gmail.com" class="topbar-cta magnet"
+          >Say hi</a
+        >
+      </div>
+    </header>
+
+    <nav class="pill-nav" aria-label="Primary">
+      <a href="#top" class="pill-brand magnet">wa</a>
+      <div class="pill-links">
+        <a href="#work" class="magnet">Work</a>
+        <a href="#about" class="magnet">About</a>
+        <a href="#machine" class="magnet">Keys</a>
+        <a href="#contact" class="magnet">Contact</a>
+      </div>
+    </nav>
+
+    <main id="top">
+      <section class="hero">
+        <!-- Thibaut: drifting glow orbs -->
+        <div class="glow glow-a" aria-hidden="true"></div>
+        <div class="glow glow-b" aria-hidden="true"></div>
+
+        <!-- Midlife-style circular portrait -->
+        <div class="hero-portrait" id="hero-portrait">
+          <div class="hero-portrait-ring" aria-hidden="true"></div>
+          <img
+            src="assets/wajeeha.jpg"
+            alt="Portrait of Wajeeha Aslam"
+            width="480"
+            height="480"
+            decoding="async"
+          />
+          <span class="hero-portrait-dot" aria-hidden="true"></span>
+        </div>
+
+        <p class="hero-kicker">AI Engineer · Lahore</p>
+
+        <!-- Tigran: staggered letter hero -->
+        <h1 class="hero-name" aria-label="wajeeha aslam">
+          <span class="name-line" data-text="wajeeha"></span>
+          <span class="name-line" data-text="aslam"></span>
+        </h1>
+
+        <p class="hero-line">
+          I build RAG systems, knowledge graphs &amp; LLM apps that
+          <em>earn their keep</em> in production.
+        </p>
+
+        <!-- Tigran: play CTA -->
+        <button class="play-btn magnet" type="button" id="play-btn">
+          <span>play</span>
+        </button>
+      </section>
+
+      <div class="marquee" aria-hidden="true">
+        <div class="marquee-track">
+          <span>Python</span><span>LangChain</span><span>GraphRAG</span
+          ><span>Neo4j</span><span>Azure OpenAI</span><span>Qdrant</span
+          ><span>FastAPI</span><span>LangGraph</span><span>Text-to-SQL</span
+          ><span>Docker</span><span>Agentic AI</span><span>RAG</span>
+          <span>Python</span><span>LangChain</span><span>GraphRAG</span
+          ><span>Neo4j</span><span>Azure OpenAI</span><span>Qdrant</span
+          ><span>FastAPI</span><span>LangGraph</span><span>Text-to-SQL</span
+          ><span>Docker</span><span>Agentic AI</span><span>RAG</span>
+        </div>
+      </div>
+
+      <!-- Getty: editorial featured strip -->
+      <section class="exhibit" aria-label="Featured project">
+        <div class="exhibit-media" aria-hidden="true">
+          <div class="exhibit-ken"></div>
+        </div>
+        <div class="exhibit-copy">
+          <p class="label">Featured · Exhibition 01</p>
+          <h2>Ontology-Based GraphRAG</h2>
+          <p>
+            50K legal cases · 1.41M nodes · error rate cut from 50% to 5%. A
+            knowledge graph that actually reasons.
+          </p>
+          <a class="exhibit-link magnet" href="#work">View the series →</a>
+        </div>
+      </section>
+
+      <section class="section work" id="work">
+        <div class="section-head">
+          <p class="label">( Selected work )</p>
+          <h2>Cool stuff I've shipped.</h2>
+        </div>
+
+        <div class="work-list">
+          <article
+            class="work-item reveal"
+            style="--i: 0"
+            data-preview="Ontology GraphRAG"
+            data-stat="50% → 5%"
+            data-accent="#c8ff3d"
+          >
+            <button class="work-toggle" type="button" aria-expanded="false">
+              <span class="work-index">01</span>
+              <span class="work-main">
+                <span class="work-title">Ontology-Based GraphRAG — LawGPT</span>
+                <span class="work-meta">Legal Tech · Production</span>
+              </span>
+              <span class="work-stat">50% → 5% error</span>
+              <span class="work-plus" aria-hidden="true"></span>
+            </button>
+            <div class="work-panel">
+              <p>
+                Designed a legal ontology and GraphRAG pipeline that turned
+                unstructured case law into a knowledge graph of
+                <strong>1.41M nodes</strong> and
+                <strong>4.44M relationships</strong> across 50K cases. Built a
+                query router combining Text-to-Cypher, vector, and full-text
+                search — unlocking multi-hop legal reasoning plain RAG couldn't
+                answer.
+              </p>
+              <ul class="tags">
+                <li>Neo4j</li>
+                <li>Azure AI Search</li>
+                <li>Ontology</li>
+                <li>LangChain</li>
+              </ul>
+            </div>
+          </article>
+
+          <article
+            class="work-item reveal"
+            style="--i: 1"
+            data-preview="FAB Policy Q&A"
+            data-stat="36/36"
+            data-accent="#5ce1ff"
+          >
+            <button class="work-toggle" type="button" aria-expanded="false">
+              <span class="work-index">02</span>
+              <span class="work-main">
+                <span class="work-title">FAB — Policy Q&amp;A Assistant</span>
+                <span class="work-meta">Enterprise · Azure</span>
+              </span>
+              <span class="work-stat">36/36 accuracy</span>
+              <span class="work-plus" aria-hidden="true"></span>
+            </button>
+            <div class="work-panel">
+              <p>
+                End-to-end policy assistant on Azure OpenAI, Azure AI Search,
+                LangChain, and Streamlit. Contextual compression, query
+                rewriting, and citation-aware answers with exact PDF + page —
+                <strong>100% accuracy</strong> across 36 evaluation cases at
+                6–9s latency.
+              </p>
+              <ul class="tags">
+                <li>Azure OpenAI</li>
+                <li>RAG</li>
+                <li>Streamlit</li>
+                <li>Citations</li>
+              </ul>
+            </div>
+          </article>
+
+          <article
+            class="work-item reveal"
+            style="--i: 2"
+            data-preview="D2D Text-to-SQL"
+            data-stat="90% → 94%"
+            data-accent="#b8ff7a"
+          >
+            <button class="work-toggle" type="button" aria-expanded="false">
+              <span class="work-index">03</span>
+              <span class="work-main">
+                <span class="work-title">D2D — Data-to-Decisions</span>
+                <span class="work-meta">Text-to-SQL · Banking &amp; Health</span>
+              </span>
+              <span class="work-stat">90% → 94%</span>
+              <span class="work-plus" aria-hidden="true"></span>
+            </button>
+            <div class="work-panel">
+              <p>
+                Reasoning-based Text-to-SQL that plans against the schema before
+                generating SQL for Dremio, with self-correction and up to 3
+                automatic retries. Improved benchmark accuracy from 90% to 94%
+                across banking, healthcare, and legal domains.
+              </p>
+              <ul class="tags">
+                <li>Text-to-SQL</li>
+                <li>Dremio</li>
+                <li>Self-correction</li>
+              </ul>
+            </div>
+          </article>
+
+          <article
+            class="work-item reveal"
+            style="--i: 3"
+            data-preview="LawGPT KSA"
+            data-stat="~90%"
+            data-accent="#7af0d2"
+          >
+            <button class="work-toggle" type="button" aria-expanded="false">
+              <span class="work-index">04</span>
+              <span class="work-main">
+                <span class="work-title">LawGPT KSA — Legal Chat</span>
+                <span class="work-meta">Bilingual · Arabic / English</span>
+              </span>
+              <span class="work-stat">~90% accuracy</span>
+              <span class="work-plus" aria-hidden="true"></span>
+            </button>
+            <div class="work-panel">
+              <p>
+                Legal chat for Saudi laws and cases supporting Arabic and
+                English — covering Labor, Basic Law, Traffic, and Sharia
+                Litigation plus 50 MOJ cases. Qdrant + Hugging Face MiniLM
+                embeddings for semantic search.
+              </p>
+              <ul class="tags">
+                <li>Qdrant</li>
+                <li>Hugging Face</li>
+                <li>Bilingual RAG</li>
+              </ul>
+            </div>
+          </article>
+
+          <article
+            class="work-item reveal"
+            style="--i: 4"
+            data-preview="HRMS Agent"
+            data-stat="~7.68s"
+            data-accent="#e8ff8a"
+          >
+            <button class="work-toggle" type="button" aria-expanded="false">
+              <span class="work-index">05</span>
+              <span class="work-main">
+                <span class="work-title">HRMS QA — Tool-Augmented Agent</span>
+                <span class="work-meta">Agentic · Azure Container Apps</span>
+              </span>
+              <span class="work-stat">~7.68s latency</span>
+              <span class="work-plus" aria-hidden="true"></span>
+            </button>
+            <div class="work-panel">
+              <p>
+                RAG and tool-augmented agent for HRMS queries with multi-layer
+                guardrails and structured citation traceability. Contextual
+                compression sharpened retrieval; deployed on Azure Container
+                Apps.
+              </p>
+              <ul class="tags">
+                <li>Agents</li>
+                <li>Guardrails</li>
+                <li>Azure</li>
+              </ul>
+            </div>
+          </article>
+
+          <article
+            class="work-item reveal"
+            style="--i: 5"
+            data-preview="TSG Drafting"
+            data-stat="8 dims"
+            data-accent="#9dffb0"
+          >
+            <button class="work-toggle" type="button" aria-expanded="false">
+              <span class="work-index">06</span>
+              <span class="work-main">
+                <span class="work-title">TSG GPT — Document Drafting</span>
+                <span class="work-meta">Automation · Structured inputs</span>
+              </span>
+              <span class="work-stat">8 dimensions</span>
+              <span class="work-plus" aria-hidden="true"></span>
+            </button>
+            <div class="work-panel">
+              <p>
+                AI drafting pipeline that classifies requests, validates
+                structured inputs across 8 business dimensions, and auto-generates
+                complete drafts from manual entry or uploaded documents.
+              </p>
+              <ul class="tags">
+                <li>LLM pipelines</li>
+                <li>Document AI</li>
+                <li>Validation</li>
+              </ul>
+            </div>
+          </article>
+        </div>
+      </section>
+
+      <section class="section about" id="about">
+        <div class="section-head">
+          <p class="label">( About )</p>
+          <h2>Hi, I'm Wajeeha.</h2>
+        </div>
+        <div class="about-grid">
+          <div class="about-copy reveal">
+            <p>
+              AI Engineer with 1+ year building production-grade LLM apps,
+              Retrieval-Augmented Generation systems, and knowledge-graph-powered
+              legal AI. I like bridging messy unstructured data and clear,
+              citable answers.
+            </p>
+            <p>
+              Currently focused on ontology-based GraphRAG, agentic workflows,
+              and Text-to-SQL — shipping on Azure with LangChain, Neo4j, Qdrant,
+              and FastAPI. Previously Associate AI Consultant at
+              <strong>Digifloat</strong>, leading 3 interns while taking systems
+              from prototype to measurable accuracy gains.
+            </p>
+            <p>
+              Studying Artificial Intelligence at
+              <strong>COMSATS University Islamabad, Lahore Campus</strong>.
+              Also active in Robotics and Automation Society events — because
+              shipping is more fun with people.
+            </p>
+          </div>
+          <aside class="about-side reveal">
+            <div class="fact">
+              <span>Based in</span>
+              <strong>Lahore, Pakistan</strong>
+            </div>
+            <div class="fact">
+              <span>Role</span>
+              <strong>AI Engineer</strong>
+            </div>
+            <div class="fact">
+              <span>Education</span>
+              <strong>BS Artificial Intelligence</strong>
+            </div>
+            <div class="fact">
+              <span>Available</span>
+              <strong>Full-time</strong>
+            </div>
+          </aside>
+        </div>
+      </section>
+
+      <section class="section skills" id="skills">
+        <div class="section-head">
+          <p class="label">( Capabilities )</p>
+          <h2>Everyday's toolbox.</h2>
+        </div>
+        <div class="skill-cols">
+          <div class="skill-col reveal">
+            <h3>LLM &amp; AI</h3>
+            <p>
+              RAG architecture · Knowledge graphs for RAG · Agentic workflows ·
+              Text-to-SQL · Inference optimization · OpenAI / Azure OpenAI
+            </p>
+          </div>
+          <div class="skill-col reveal">
+            <h3>Engineering</h3>
+            <p>
+              Python · FastAPI · LangChain / LangGraph · SQL · Docker · MCP ·
+              REST APIs · Git · Linux / Bash · Streamlit
+            </p>
+          </div>
+          <div class="skill-col reveal">
+            <h3>Data &amp; Cloud</h3>
+            <p>
+              Neo4j · Qdrant / FAISS · Azure AI Search · MySQL / PostgreSQL ·
+              Azure Container Apps · Blob Storage · Prometheus / Grafana
+            </p>
+          </div>
+        </div>
+      </section>
+
+      <section class="section machine-section" id="machine">
+        <div class="machine" id="machine-device">
+          <div class="machine-top">
+            <div class="machine-knob" aria-hidden="true">
+              <span class="machine-led"></span>
+            </div>
+            <p class="machine-brand">wajeeha aslam</p>
+            <div class="machine-grille" aria-hidden="true"></div>
+          </div>
+
+          <div class="machine-screen" aria-live="polite">
+            <pre id="machine-screen-text">WAJEEHA OS v1.0
+SYSTEM STATUS: READY
+
+Tap a pad. Or hit AUTOPLAY.</pre>
+          </div>
+
+          <div class="machine-body">
+            <div class="machine-row beats-row">
+              <span class="row-label">BEATS</span>
+              <div class="pad-row">
+                <button class="pad" type="button" data-note="C4" data-label="RAG">1</button>
+                <button class="pad" type="button" data-note="E4" data-label="GraphRAG">2</button>
+                <button class="pad" type="button" data-note="G4" data-label="Agents">3</button>
+                <button class="pad pad-dark" type="button" data-note="B4" data-label="Azure" aria-label="Azure">·</button>
+              </div>
+            </div>
+
+            <div class="machine-grid">
+              <span class="row-label">KEYS</span>
+              <div class="pad-grid">
+                <button class="pad tone-0" type="button" data-note="C3" data-label="Python">·</button>
+                <button class="pad tone-0" type="button" data-note="D3" data-label="LangChain">·</button>
+                <button class="pad tone-0" type="button" data-note="E3" data-label="LangGraph">·</button>
+                <button class="pad tone-0" type="button" data-note="F3" data-label="FastAPI">·</button>
+                <a
+                  class="pad tone-0 pad-icon"
+                  href="mailto:wajeehaaslam597@gmail.com"
+                  data-note="G3"
+                  data-label="Email"
+                  data-action="email"
+                  aria-label="Email wajeehaaslam597@gmail.com"
+                  >✉</a
+                >
+
+                <button class="pad tone-1" type="button" data-note="A3" data-label="Neo4j">·</button>
+                <button class="pad tone-1" type="button" data-note="B3" data-label="Qdrant">·</button>
+                <button class="pad tone-1" type="button" data-note="C4" data-label="FAISS">·</button>
+                <button class="pad tone-1" type="button" data-note="D4" data-label="AI Search">·</button>
+                <button class="pad tone-1 pad-icon" type="button" data-note="E4" data-label="LinkedIn" data-action="linkedin" aria-label="LinkedIn">in</button>
+
+                <button class="pad tone-2" type="button" data-note="F4" data-label="Docker">·</button>
+                <button class="pad tone-2" type="button" data-note="G4" data-label="MCP">·</button>
+                <button class="pad tone-2" type="button" data-note="A4" data-label="Streamlit">·</button>
+                <button class="pad tone-2" type="button" data-note="B4" data-label="SQL">·</button>
+                <button class="pad tone-2 pad-icon" type="button" data-note="C5" data-label="GitHub" data-action="github" aria-label="GitHub">⌥</button>
+
+                <button class="pad tone-3" type="button" data-note="D5" data-label="Text-to-SQL">·</button>
+                <button class="pad tone-3" type="button" data-note="E5" data-label="Ontology">·</button>
+                <button class="pad tone-3" type="button" data-note="F5" data-label="Citations">·</button>
+                <button class="pad tone-3" type="button" data-note="G5" data-label="Eval">·</button>
+                <button class="pad tone-3 pad-icon" type="button" data-note="A5" data-label="Open for work" aria-label="Open for work">☾</button>
+              </div>
+            </div>
+          </div>
+
+          <div class="machine-controls">
+            <button class="machine-btn" type="button" id="autoplay-btn">
+              <i></i> AUTOPLAY
+            </button>
+            <a
+              class="machine-btn machine-btn-accent"
+              href="mailto:wajeehaaslam597@gmail.com"
+              id="record-btn"
+            >
+              <i></i> SAY HI
+            </a>
+          </div>
+        </div>
+      </section>
+
+      <section class="section contact" id="contact">
+        <p class="label">( Contact )</p>
+        <h2 class="contact-title">
+          Let's cut<br />
+          the noise.
+        </h2>
+        <p class="contact-lead">
+          Got a RAG problem, a messy corpus, or a product that needs AI that
+          actually works? Hit me up.
+        </p>
+        <div class="contact-row">
+          <a class="copy-btn magnet" href="mailto:wajeehaaslam597@gmail.com">
+            Email me →
+          </a>
+          <button class="contact-link" type="button" id="copy-email">
+            Copy email
+          </button>
+          <a
+            class="contact-link"
+            href="https://linkedin.com/in/wajeeha-aslam"
+            target="_blank"
+            rel="noopener noreferrer"
+            >LinkedIn ↗</a
+          >
+          <a
+            class="contact-link"
+            href="https://github.com/WajeehaAslam"
+            target="_blank"
+            rel="noopener noreferrer"
+            >GitHub ↗</a
+          >
+          <a class="contact-link" href="tel:+923134601985">+92 313 4601985</a>
+        </div>
+        <p class="copy-toast" id="copy-toast" aria-live="polite"></p>
+      </section>
+    </main>
+
+    <footer class="footer">
+      <p>© <span id="year"></span> Wajeeha Aslam</p>
+      <p>Built with care · Designed to ship</p>
+    </footer>
+
+    <script src="js/main.js"></script>
+  </body>
+</html>
