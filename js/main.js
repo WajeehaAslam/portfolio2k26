@@ -19,20 +19,7 @@
   tick();
   setInterval(tick, 30_000);
 
-  /* ——— Tigran: split letters ——— */
-  document.querySelectorAll(".name-line").forEach((line) => {
-    const text = line.dataset.text || "";
-    line.innerHTML = "";
-    [...text].forEach((ch, i) => {
-      const span = document.createElement("span");
-      span.className = "char";
-      span.textContent = ch;
-      span.style.transitionDelay = `${0.05 + i * 0.045}s`;
-      line.appendChild(span);
-    });
-  });
-
-  /* ——— ThevertMenthe: loader counter ——— */
+  /* ——— Loader ——— */
   const loader = document.getElementById("loader");
   const loaderNum = document.getElementById("loader-num");
   const finishReady = () => {
